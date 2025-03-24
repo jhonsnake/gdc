@@ -39,6 +39,7 @@ function PhotoGallery() {
               location: item.acf?.municipio || "Sin municipio",
               description: item.acf?.descripcion || "Sin descripción",
               imageUrl: item.acf?.foto || "https://placehold.co/300",
+              moreInfoLink: item.acf?.enlace || null,
             };
           })
           .filter((item) => item !== null);
@@ -294,6 +295,18 @@ function PhotoGallery() {
                         {selectedPhoto.description}
                       </p>
                     </div>
+                    {selectedPhoto.moreInfoLink && (
+                      <div className="mt-4 flex justify-center">
+                        <a
+                          href={selectedPhoto.moreInfoLink}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-block px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition-colors"
+                        >
+                          Más información
+                        </a>
+                      </div>
+                    )}
                   </div>
                 </div>
               </div>
