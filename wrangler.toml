@@ -1,13 +1,13 @@
 [build]
 command = "npm run build"
 
-[build.upload]
-format = "service-worker"
-target = "dist"
-
 [site]
 bucket = "dist"
 entry-point = "index.html"
+
+[build.upload]
+format = "static-site"
+target = "dist"
 
 [vars]
 # Aquí puedes agregar variables de entorno si las necesitas
