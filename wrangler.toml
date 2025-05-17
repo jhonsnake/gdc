@@ -1,8 +1,8 @@
 [build]
 command = "npm run build"
-env = "production"
 
 [build.upload]
+format = "service-worker"
 target = "dist"
 
 [site]
@@ -11,6 +11,9 @@ entry-point = "index.html"
 
 [vars]
 # Aquí puedes agregar variables de entorno si las necesitas
+
+# Compatibility date for Cloudflare Pages
+compatibility_date = "2025-05-17"
 
 [compatibility]
 date = "2025-05-17"
