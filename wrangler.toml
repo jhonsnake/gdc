@@ -1,0 +1,16 @@
+[build]
+command = "npm run build"
+env = "production"
+
+[build.upload]
+target = "dist"
+
+[site]
+bucket = "dist"
+entry-point = "index.html"
+
+[vars]
+# Aquí puedes agregar variables de entorno si las necesitas
+
+[compatibility]
+date = "2025-05-17"
