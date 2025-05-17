@@ -6,6 +6,9 @@ command = "npm run build"
 [site]
 bucket = "dist"
 
+# Pages configuration
+pages_build_output_dir = "dist"
+
 # Optional: If you have environment variables you need
 # [vars]
 # MY_VARIABLE = "someValue"

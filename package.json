@@ -8,7 +8,7 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "deploy": "wrangler pages deploy dist --project-name=gdcv2"
+    "deploy": "wrangler pages deploy"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.0.12",
