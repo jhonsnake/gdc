@@ -1,16 +1,15 @@
+# This section is dedicated to Cloudflare Pages project configuration
 [pages]
 name = "galeriadecorruptos"
 build_command = "npm run build"
-build_directory = "dist"
-pages_build_output_dir = "dist"
-deploy_hook = ""
+build_directory = "dist" # This is where your build command outputs files
+pages_build_output_dir = "dist" # Explicitly tells Pages where to find the static assets
+# deploy_hook = "" # Only needed if you have a specific deploy hook URL
 
-[build]
-command = "npm run build"
-
-[site]
-bucket = "dist"
-
-# Optional: If you have environment variables you need
+# Optional: If you need to configure environment variables for Pages Functions
 # [vars]
 # MY_VARIABLE = "someValue"
+
+# Optional: If you need specific compatibility flags for Pages Functions (Workers)
+# [compatibility_flags]
+# service_binding_version = "2"
