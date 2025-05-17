@@ -7,7 +7,7 @@ command = "npm run build"
 bucket = "dist"
 
 # Pages configuration
-pages_build_output_dir = "dist/assets"
+pages_build_output_dir = "dist"
 
 # Optional: If you have environment variables you need
 # [vars]
