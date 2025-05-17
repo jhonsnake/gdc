@@ -1,19 +1,11 @@
+main = "index.html"
+
 [build]
 command = "npm run build"
 
 [site]
 bucket = "dist"
-entry-point = "index.html"
 
-[build.upload]
-format = "static-site"
-target = "dist"
-
-[vars]
-# Aquí puedes agregar variables de entorno si las necesitas
-
-# Compatibility date for Cloudflare Pages
-compatibility_date = "2025-05-17"
-
-[compatibility]
-date = "2025-05-17"
+# Optional: If you have environment variables you need
+# [vars]
+# MY_VARIABLE = "someValue"
